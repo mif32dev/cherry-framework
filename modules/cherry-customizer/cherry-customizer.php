@@ -517,7 +517,7 @@ class Cherry_Customizer {
 	 * Retrieve a default option value.
 	 *
 	 * @since  1.0.0
-	 * @param  string $id get default option by id
+	 * @param  string $id get default option by id.
 	 * @return mixed
 	 */
 	public function get_default( $id ) {
