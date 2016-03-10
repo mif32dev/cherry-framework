@@ -18,10 +18,8 @@ if ( ! defined( 'WPINC' ) ) {
 if ( ! class_exists( 'UI_Textarea' ) ) {
 
 	/**
-	 * Class for the building UI_Textarea elements
-	 *
+	 * Class for the building UI_Textarea elements.
 	 */
-
 	class UI_Textarea extends UI_Element implements I_UI {
 		/**
 		 * Default settings

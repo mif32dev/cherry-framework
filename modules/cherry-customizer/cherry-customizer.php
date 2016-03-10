@@ -955,6 +955,12 @@ class Cherry_Customizer {
 		return array_combine( $keys, $values );
 	}
 
+	/**
+	 * Buylild family and caategory.
+	 *
+	 * @since 1.0.0
+	 * @param  array $item items array.
+	 */
 	public function _build_keys( $item ) {
 
 		if ( empty( $item['family'] ) ) {
@@ -964,6 +970,12 @@ class Cherry_Customizer {
 		return sprintf( "'%s', %s", $item['family'], $item['category'] );
 	}
 
+	/**
+	 * Check key family.
+	 *
+	 * @since 1.0.0
+	 * @param  array $item items array.
+	 */
 	public function _build_values( $item ) {
 
 		if ( empty( $item['family'] ) ) {
@@ -972,7 +984,11 @@ class Cherry_Customizer {
 
 		return $item['family'];
 	}
-
+	/**
+	 * Add new option.
+	 *
+	 * @since 1.0.0
+	 */
 	public function add_options() {
 
 		if ( empty( $this->options ) ) {
