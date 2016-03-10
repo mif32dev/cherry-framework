@@ -1,7 +1,7 @@
 <?php
 /**
  * Class Cherry Satellite Utilit
- * 
+ *
  * @package    Cherry_Framework
  * @subpackage Class
  * @author     Cherry Team <support@cherryframework.com>

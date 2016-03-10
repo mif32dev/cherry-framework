@@ -11,7 +11,7 @@
  */
 
 // If this file is called directly, abort.
-if ( !defined( 'WPINC' ) ) {
+if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
@@ -29,7 +29,7 @@ if ( ! class_exists( 'Cherry_Meta_Data_Utilit' ) ) {
 		 * @return string
 		 */
 		public function get_terms( $args = array(), $id = 0 ) {
-			$object =  $this->get_post_object( $id );
+			$object = $this->get_post_object( $id );
 
 			if ( empty( $object->ID ) ) {
 				return false;
@@ -58,9 +58,9 @@ if ( ! class_exists( 'Cherry_Meta_Data_Utilit' ) ) {
 				$terms_count = count( $terms ) - 1 ;
 
 				foreach ( $terms as $key => $term ) {
-					$html_class= 'class="' . $args['class'] . ' ' . $term->slug . ' "';
-					$name= $term->name ;
-					$title= 'title="' . $name . '"' ;
+					$html_class = 'class="' . $args['class'] . ' ' . $term->slug . ' "';
+					$name = $term->name ;
+					$title = 'title="' . $name . '"' ;
 					$link = get_term_link( $term->term_id , $args['type'] );
 					$delimiter = ( $terms_count !== $key ) ? $args['delimiter'] : '' ;
 
@@ -78,7 +78,7 @@ if ( ! class_exists( 'Cherry_Meta_Data_Utilit' ) ) {
 		 * @return string
 		 */
 		public function get_author( $args = array(), $id = 0 ) {
-			$object =  $this->get_post_object( $id );
+			$object = $this->get_post_object( $id );
 
 			if ( empty( $object->ID ) ) {
 				return false;
@@ -114,7 +114,7 @@ if ( ! class_exists( 'Cherry_Meta_Data_Utilit' ) ) {
 		 * @return string
 		 */
 		public function get_comment_count( $args = array(), $id = 0 ) {
-			$object =  $this->get_post_object( $id );
+			$object = $this->get_post_object( $id );
 
 			if ( empty( $object->ID ) ) {
 				return false;
