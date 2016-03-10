@@ -160,6 +160,5 @@ if ( ! class_exists( 'UI_Media' ) ) {
 				'all'
 			);
 		}
-
 	}
 }

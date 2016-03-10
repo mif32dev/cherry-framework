@@ -96,6 +96,5 @@ if ( ! class_exists( 'UI_Stepper' ) ) {
 				'all'
 			);
 		}
-
 	}
 }

@@ -24,7 +24,7 @@ if ( ! class_exists( 'Cherry_Media_Utilit' ) ) {
 		/**
 		 * Get post image.
 		 *
- 		 * @since 1.0.0
+		 * @since 1.0.0
 		 *
 		 * @return string
 		 */
@@ -102,7 +102,7 @@ if ( ! class_exists( 'Cherry_Media_Utilit' ) ) {
 				'class'						=> 'wp-video',
 			);
 			$args = array_merge( $default_args, $args );
-			$size= wp_is_mobile() ? $args['mobile_size'] : $args['size'] ;
+			$size = wp_is_mobile() ? $args['mobile_size'] : $args['size'] ;
 			$size_array = $this->get_thumbnail_size_array( $size );
 			$video_url = wp_extract_urls( $object->post_content );
 

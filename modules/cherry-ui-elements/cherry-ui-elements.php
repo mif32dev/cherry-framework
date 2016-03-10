@@ -1,7 +1,7 @@
 <?php
 /**
  * Class for the building ui elements
- * 
+ *
  * @package    Cherry_Framework
  * @subpackage Class
  * @author     Cherry Team <cherryframework@gmail.com>
@@ -53,10 +53,18 @@ if ( ! class_exists( 'Cherry_UI_Elements' ) ) {
 		 */
 		private $args = array(
 			'ui_elements'	=> array(
-				'text', 'number', 'textarea',
-				'select', 'checkbox', 'radio',
-				'colorpicker', 'media', 'stepper',
-				'switcher', 'slider', 'collection'
+				'text',
+				'number',
+				'textarea',
+				'select',
+				'checkbox',
+				'radio',
+				'colorpicker',
+				'media',
+				'stepper',
+				'switcher',
+				'slider',
+				'collection',
 			),
 		);
 
@@ -120,7 +128,7 @@ if ( ! class_exists( 'Cherry_UI_Elements' ) ) {
 			// Add I_UI interface.
 			require_once( $this->module_directory . '/i-ui.php' );
 
-			if ( ! class_exists('UI_Element') ) {
+			if ( ! class_exists( 'UI_Element' ) ) {
 				require_once( $this->module_directory . '/ui-element.php' );
 			}
 
@@ -158,5 +166,3 @@ if ( ! class_exists( 'Cherry_UI_Elements' ) ) {
 		}
 	}
 }
-
-?>

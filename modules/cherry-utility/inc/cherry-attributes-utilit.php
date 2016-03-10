@@ -16,7 +16,9 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 if ( ! class_exists( 'Cherry_Attributes_Utilit' ) ) {
-
+	/**
+	 * Class Cherry Attributes Utilit
+	 */
 	class Cherry_Attributes_Utilit extends Cherry_Satellite_Utilit{
 
 		/**

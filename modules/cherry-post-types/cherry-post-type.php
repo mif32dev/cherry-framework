@@ -1,6 +1,7 @@
 <?php
 /**
  * Custom post type
+ *
  * @package    Cherry_Framework
  * @subpackage Class
  * @author     Cherry Team <cherryframework@gmail.com>

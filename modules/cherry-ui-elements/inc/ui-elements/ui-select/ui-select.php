@@ -172,6 +172,5 @@ if ( ! class_exists( 'UI_Select' ) ) {
 				'all'
 			);
 		}
-
 	}
 }

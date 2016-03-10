@@ -122,6 +122,5 @@ if ( ! class_exists( 'UI_Slider' ) ) {
 				'all'
 			);
 		}
-
 	}
 }
