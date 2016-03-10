@@ -2,8 +2,8 @@
 /**
  * Colection view
  *
- */
-?>
+ * @package    Cherry_Framework
+ */?>
 <div class="cherry-infinite-container">
 	<table class="cherry-infinite">
 		<tbody class="cherry-infinite-sortable">
@@ -15,7 +15,7 @@
 					<table>
 						<tbody>
 							<?php if ( is_array( $elements ) && count( $elements ) ) : ?>
-								<?php foreach ( $elements as $el) : ?>
+								<?php foreach ( $elements as $el ) : ?>
 									<tr>
 										<th><label for="<?php echo $el['args']['name']; ?>"><?php echo $el['args']['left_label']; ?></label></th>
 										<td><?php echo $el['html']; ?></td>

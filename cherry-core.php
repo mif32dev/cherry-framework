@@ -1,5 +1,6 @@
 <?php
 /**
+ * Class Cherry Core
  *
  * @package    Cherry_Framework
  * @subpackage Class
@@ -15,7 +16,9 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 if ( ! class_exists( 'Cherry_Core' ) ) {
-
+	/**
+	 * Class Cherry Core
+	 */
 	class Cherry_Core {
 
 		/**

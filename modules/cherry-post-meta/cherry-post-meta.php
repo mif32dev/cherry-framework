@@ -1,7 +1,7 @@
 <?php
 /**
  * Post meta management module
- * 
+ *
  * @package    Cherry_Framework
  * @subpackage Class
  * @author     Cherry Team <cherryframework@gmail.com>
@@ -264,21 +264,21 @@ if ( ! class_exists( 'Cherry_Post_Meta' ) ) {
 						'true_slave'   => '',
 						'false_slave'  => '',
 					) ),
-					'required'           => $this->get_arg( $field, 'required', false),
+					'required'           => $this->get_arg( $field, 'required', false ),
 				);
 
 				$current_element = $this->ui_builder->get_ui_element_instance( $args['type'], $args );
 
 				$elements[] = array(
 					'html'  => $current_element->render(),
-					'field' => $field
+					'field' => $field,
 				);
 
 			}
 			return Cherry_Core::render_view(
 				$this->module_directory . '/views/meta.php',
 				array(
-					'elements' => $elements
+					'elements' => $elements,
 				)
 			);
 		}

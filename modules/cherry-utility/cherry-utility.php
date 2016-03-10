@@ -79,7 +79,7 @@ if ( ! class_exists( 'Cherry_Utility' ) ) {
 		 * Cherry_Utility constructor
 		 *
 		 * @since 1.0.0
-		*/
+		 */
 		function __construct( $core, $args = array() ) {
 
 			$this->module_directory = $core->settings['base_dir'] . '/modules/cherry-utility';

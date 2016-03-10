@@ -1,6 +1,7 @@
 <?php
 /**
  * Class for the building ui-collection element.
+ *
  * @package    Cherry_Framework
  * @subpackage Class
  * @author     Cherry Team <support@cherryframework.com>
@@ -43,10 +44,13 @@ if ( ! class_exists( 'UI_Collection' ) ) {
 	 *  		),
 	 *  	)
 	 *  );
-	 *
 	 */
 	class UI_Collection extends UI_Element implements I_UI {
-
+		/**
+		 * Default settings
+		 *
+		 * @var array
+		 */
 		private $defaults_settings = array(
 			'id'			=> 'collection',
 			'name'			=> 'collection',
@@ -70,7 +74,7 @@ if ( ! class_exists( 'UI_Collection' ) ) {
 			$count = max( 1, $this->get_rows_count() );
 			$rendered_controls = array();
 			if ( is_array( $this->settings['controls'] ) && count( $this->settings['controls'] ) ) {
-				for ( $i=0; $i < $count; $i++ ) {
+				for ( $i = 0; $i < $count; $i++ ) {
 					foreach ( $this->settings['controls'] as $class => $args ) {
 						if ( in_array( 'I_UI', class_implements( $class ) ) ) {
 							$control      = new $class( $args );
