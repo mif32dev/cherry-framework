@@ -24,10 +24,10 @@ if ( ! class_exists( 'Cherry_Media_Utilit' ) ) {
  		 * @since  1.0.0
 		 * @return string
 		 */
-		public function get_image( $args = array(), $type = 'post', $ID = 0 ) {
-			$object = call_user_func( array( $this, 'get_' . $type . '_object' ), $ID );
+		public function get_image( $args = array(), $type = 'post', $id = 0 ) {
+			$object = call_user_func( array( $this, 'get_' . $type . '_object' ), $id );
 
-			if ( 'post' === $type && empty($object->ID) || 'term' === $type && empty($object->term_id) ){
+			if ( 'post' === $type && empty( $object->ID ) || 'term' === $type && empty( $object->term_id ) ) {
 				return false;
 			}
 
@@ -41,25 +41,24 @@ if ( ! class_exists( 'Cherry_Media_Utilit' ) ) {
 				'html_tag_suze'				=> true,
 			);
 			$args = array_merge( $default_args, $args );
-			$size= wp_is_mobile() ? $args[ 'mobile_size' ] : $args[ 'size' ] ;
+			$size= wp_is_mobile() ? $args['mobile_size'] : $args['size'] ;
 			$size_array = $this->get_thumbnail_size_array( $size );
 			$class = ( $args['class'] ) ? 'class="' . $args['class'] . '"' : '' ;
 			$html_tag_suze = ( $args['html_tag_suze'] ) ? 'width="' . $size_array['width']  . 'px" height="' . $size_array['height']  . 'px"' : '' ;
 
-
-			if( 'post' === $type ){
+			if ( 'post' === $type ) {
 				$ID = $object->ID;
-				$thumbnail_id = get_post_thumbnail_id( $ID );
+				$thumbnail_id = get_post_thumbnail_id( $id );
 				$alt = esc_attr( $object->post_title );
-			}else{
-				$ID = $object->term_id;
-				$thumbnail_id = get_term_meta( $ID, '_tm_thumb' , true );
+			} else {
+				$id = $object->term_id;
+				$thumbnail_id = get_term_meta( $id, '_tm_thumb' , true );
 				$alt = esc_attr( $object->name );
 			}
 
-			if( $thumbnail_id ){
+			if ( $thumbnail_id ) {
 				$src = wp_get_attachment_image_url( $thumbnail_id, $size );
-			}else{
+			} else {
 				// Place holder defaults attr
 				$attr = array(
 					'width'			=> $size_array['width'],
@@ -86,10 +85,10 @@ if ( ! class_exists( 'Cherry_Media_Utilit' ) ) {
 		 * @since  1.0.0
 		 * @return string
 		 */
-		public function get_video( $args = array(), $ID = 0 ) {
-			$object = $this->get_post_object( $ID );
+		public function get_video( $args = array(), $id = 0 ) {
+			$object = $this->get_post_object( $id );
 
-			if ( empty( $object->ID ) ){
+			if ( empty( $object->ID ) ) {
 				return false;
 			}
 
@@ -109,11 +108,11 @@ if ( ! class_exists( 'Cherry_Media_Utilit' ) ) {
 
 			$video = wp_oembed_get( $video_url[ 0 ], array( 'width' => $size_array['width'] ) );
 
-			if( !$video ){
+			if ( ! $video ) {
 				$post_thumbnail_id = get_post_thumbnail_id( $object->ID );
 				$poster = wp_get_attachment_image_url( $post_thumbnail_id, $size );
 
-				$video = wp_video_shortcode( array( 'src' => $video_url[ 0 ], 'width' => '100%', 'height' => '100%', 'poster' => $poster ) );
+				$video = wp_video_shortcode( array( 'src' => $video_url[0], 'width' => '100%', 'height' => '100%', 'poster' => $poster ) );
 			}
 
 			return $video;
