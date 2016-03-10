@@ -23,3 +23,4 @@ modules/cherry-ui-elements/inc/ui-elements/ui-switcher/assets/ui-switcher.js
 modules/cherry-ui-elements/inc/ui-elements/ui-collection/assets/js/min/ui-collection.min.js
 modules/cherry-ui-elements/inc/ui-elements/ui-collection/assets/js/jquery.collection.js
 modules/cherry-ui-elements/inc/ui-elements/ui-collection/assets/js/min/jquery.collection.min.js
+/modules/cherry-ui-elements/inc/ui-elements/ui-collection/assets/js/ui-collection.js
