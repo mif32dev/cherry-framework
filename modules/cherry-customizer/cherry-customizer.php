@@ -517,7 +517,7 @@ class Cherry_Customizer {
 	 * Retrieve a default option value.
 	 *
 	 * @since  1.0.0
-	 * @param  string $id
+	 * @param  string $id get default option by id
 	 * @return mixed
 	 */
 	public function get_default( $id ) {
@@ -624,7 +624,24 @@ class Cherry_Customizer {
 		// If the input is a valid key, return it; otherwise, return the default.
 		return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 	}
-
+	/**
+	 * Radio sanitization callback.
+	 *
+	 * - Sanitization: select
+	 * - Control: select, radio
+	 *
+	 * Sanitization callback for 'select' and 'radio' type controls. This callback sanitizes `$input`
+	 * as a slug, and then validates `$input` against the choices defined for the control.
+	 *
+	 * @author WPTRT <https://github.com/WPTRT>
+	 * @author Cherry Team <cherryframework@gmail.com>
+	 * @see    sanitize_key()               https://developer.wordpress.org/reference/functions/sanitize_key/
+	 * @see    $wp_customize->get_control() https://developer.wordpress.org/reference/classes/wp_customize_manager/get_control/
+	 * @since  1.0.0
+	 * @param  string               $input   Slug to sanitize.
+	 * @param  WP_Customize_Setting $setting Setting instance.
+	 * @return string                        Sanitized slug if it is a valid choice; otherwise, the setting default.
+	 */
 	public function sanitize_radio( $input, $setting ) {
 		return $this->sanitize_select( $input, $setting );
 	}
