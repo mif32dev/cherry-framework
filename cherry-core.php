@@ -114,7 +114,7 @@ if ( ! class_exists( 'Cherry_Core' ) ) {
 		 * Init sinle module
 		 *
 		 * @param  [type] $module module slug.
-		 * @param  [type]  $args   Module arguments array.
+		 * @param  array  $args   Module arguments array.
 		 *
 		 * @since  1.0.0
 		 * @return mixed
@@ -151,7 +151,7 @@ if ( ! class_exists( 'Cherry_Core' ) ) {
 		/**
 		 * Check module autoload.
 		 *
-		 * @param  string $module module slug.
+		 * @param  [type] $module module slug.
 		 * @return boolean
 		 */
 		public function is_module_autoload( $module ) {
@@ -166,7 +166,7 @@ if ( ! class_exists( 'Cherry_Core' ) ) {
 		/**
 		 * Include module.
 		 *
-		 * @param  string $module module slug.
+		 * @param  [type] $module module slug.
 		 *
 		 * @since  1.0.0
 		 * @return bool
@@ -191,7 +191,7 @@ if ( ! class_exists( 'Cherry_Core' ) ) {
 		/**
 		 * Get module instance.
 		 *
-		 * @param  string $module module slug.
+		 * @param  [type] $module module slug.
 		 *
 		 * @since  1.0.0
 		 * @return object
@@ -211,7 +211,7 @@ if ( ! class_exists( 'Cherry_Core' ) ) {
 		/**
 		 * Get class name by module slug.
 		 *
-		 * @param  string $slug Module slug.
+		 * @param  [type] $slug Module slug.
 		 *
 		 * @since  1.0.0
 		 * @return string       Class name
@@ -227,7 +227,7 @@ if ( ! class_exists( 'Cherry_Core' ) ) {
 		 * Get path to main file for passed module
 		 *
 		 * @since  1.0.0
-		 * @param  string $module module slug.
+		 * @param  [type] $module module slug.
 		 * @return string
 		 */
 		public function get_module_path( $module ) {
