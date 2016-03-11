@@ -445,10 +445,10 @@ if ( ! class_exists( 'Cherry_Breadcrumbs' ) ) {
 		 *
 		 * @since 4.0.0
 		 *
-		 * @param string $format item format to add.
-		 * @param string $label  item label.
-		 * @param string $url    item URL.
-		 * @param string $class  item CSS class.
+		 * @param [type] $format item format to add.
+		 * @param [type] $label  item label.
+		 * @param [type] $url    item URL.
+		 * @param [type] $class  item CSS class.
 		 */
 		public function _add_item( $format = 'link_format', $label, $url = '', $class = '' ) {
 
@@ -519,7 +519,7 @@ if ( ! class_exists( 'Cherry_Breadcrumbs' ) ) {
 		 *
 		 * @since  4.0.0
 		 *
-		 * @param  string $path The path (slug) to search for posts by.
+		 * @param  [type] $path The path (slug) to search for posts by.
 		 */
 		function add_path_parents( $path ) {
 
@@ -1225,7 +1225,7 @@ if ( ! class_exists( 'Cherry_Breadcrumbs' ) ) {
 		 *
 		 * @since 4.0.0
 		 *
-		 * @param integer $post_id first parent post ID.
+		 * @param [type] $post_id first parent post ID.
 		 */
 		public function add_post_parents( $post_id ) {
 
@@ -1314,7 +1314,7 @@ if ( ! class_exists( 'Cherry_Breadcrumbs' ) ) {
 		 * @since  4.0.0
 		 *
 		 * @param  int    $term_id  ID of the term to get the parents of.
-		 * @param  string $taxonomy Name of the taxonomy for the given term.
+		 * @param  [type] $taxonomy Name of the taxonomy for the given term.
 		 */
 		function add_term_parents( $term_id, $taxonomy ) {
 
@@ -1355,7 +1355,7 @@ if ( ! class_exists( 'Cherry_Breadcrumbs' ) ) {
 		/**
 		 * Service function to process single tag item
 		 *
-		 * @param  string $tag     single tag.
+		 * @param  [type] $tag     single tag.
 		 * @param  int    $post_id processed post ID.
 		 */
 		function _process_single_tag( $tag, $post_id ) {
@@ -1447,7 +1447,7 @@ if ( ! class_exists( 'Cherry_Breadcrumbs' ) ) {
 		 * @since  4.0.0
 		 *
 		 * @param  int    $post_id ID of the post whose parents we want.
-		 * @param  string $path    Path of a potential parent page.
+		 * @param  [type] $path    Path of a potential parent page.
 		 */
 		public function map_rewrite_tags( $post_id, $path ) {
 
@@ -1480,7 +1480,7 @@ if ( ! class_exists( 'Cherry_Breadcrumbs' ) ) {
 		 * Try to escape font icon from passed label and return it if found, or return label
 		 *
 		 * @since  4.0.4
-		 * @param  string      $label    passed label.
+		 * @param  [type]      $label    passed label.
 		 * @param  bool|string $fallback optional fallback text to add inside icon tag.
 		 * @return string
 		 */

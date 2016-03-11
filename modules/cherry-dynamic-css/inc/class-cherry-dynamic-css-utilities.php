@@ -31,8 +31,8 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * Make passed color darken.
 		 *
 		 * @since  1.0.0
-		 * @param  string $color  HEX or RGB(A) color value.
-		 * @param  float  $darken Darken percent (0-100).
+		 * @param  [type] $color  HEX or RGB(A) color value.
+		 * @param  [type] $darken Darken percent (0-100).
 		 * @return string          Processed color.
 		 */
 		public function color_darken( $color, $darken = 0 ) {
@@ -73,8 +73,8 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * Make passed color lighten.
 		 *
 		 * @since  1.0.0
-		 * @param  string $color   HEX or RGB(A) color value.
-		 * @param  float  $lighten Lighten percent (0-100).
+		 * @param  [type] $color   HEX or RGB(A) color value.
+		 * @param  [type] $lighten Lighten percent (0-100).
 		 * @return string           Processed color.
 		 */
 		public function color_lighten( $color, $lighten = 0 ) {
@@ -115,8 +115,8 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * Convert passed color into RGBa with passed opacity.
 		 *
 		 * @since  1.0.0
-		 * @param  string  $color   Color to convert.
-		 * @param  integer $opacity Opacity.
+		 * @param  [type] $color   Color to convert.
+		 * @param  [type] $opacity Opacity.
 		 * @return string
 		 */
 		public function color_alpha( $color, $opacity = 100 ) {
@@ -146,9 +146,9 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * 2nd selected if passed is light, so it must be darken.
 		 *
 		 * @since  1.0.0
-		 * @param  string $color     Color to get contrast for.
-		 * @param  string $if_dark   Return this if we had dark color.
-		 * @param  string $if_light  Return this if we had light color.
+		 * @param  [type] $color     Color to get contrast for.
+		 * @param  [type] $if_dark   Return this if we had dark color.
+		 * @param  [type] $if_light  Return this if we had light color.
 		 * @return string            Color.
 		 */
 		public function color_contrast( $color, $if_dark = '#ffffff', $if_light = '#000000' ) {
@@ -184,8 +184,8 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * and change percentage.
 		 *
 		 * @since  1.0.0
-		 * @param  string $color   HEX or RGB(A) color value.
-		 * @param  float  $percent Modify percent (0-100).
+		 * @param  [type] $color   HEX or RGB(A) color value.
+		 * @param  [type]  $percent Modify percent (0-100).
 		 * @return array           Prepared color and modify percent.
 		 */
 		public function prepare_color_mod( $color, $percent = 0 ) {
@@ -250,7 +250,7 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * If passed multiplie images - returns retina ready CSS.
 		 *
 		 * @since  1.0.0
-		 * @param  string $selector CSS selector to apply bg for.
+		 * @param  [type] $selector CSS selector to apply bg for.
 		 * @param  array  $data     data-array from options.
 		 * @return string
 		 */
@@ -331,7 +331,7 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * Always adds hash to color use `sanitize_hex_color` if exist.
 		 *
 		 * @since  1.0.0
-		 * @param  string $color  Maybe HEX color.
+		 * @param  [type] $color  Maybe HEX color.
 		 * @return string|null     Sanitized color.
 		 */
 		public function sanitize_hex_color( $color ) {
@@ -483,7 +483,7 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * Prepare font family for passing into typography function.
 		 *
 		 * @since  4.0.5
-		 * @param  string $item Array item.
+		 * @param  [type] $item Array item.
 		 * @param  int    $index Array item index.
 		 * @return void
 		 */
@@ -595,7 +595,7 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  array  $data     data-array.
-		 * @param  string $property CSS property.
+		 * @param  [type] $property CSS property.
 		 * @return string
 		 */
 		public function cherry_prepare_css_indents( $data, $property ) {
@@ -635,8 +635,8 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * Service callback function for.
 		 *
 		 * @since  1.0.0
-		 * @param  string $item Position value.
-		 * @param  string $key  Position key.
+		 * @param  [type] $item Position value.
+		 * @param  [type] $key  Position key.
 		 * @param  array  $data Array of allowed positions and property prefix.
 		 * @return void
 		 */
@@ -666,8 +666,8 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  double $size Typography size.
-		 * @param  string $operation Arithmetic operator (multiple, addition).
-		 * @param  string $func      Function name (floor, ceil, round, abs).
+		 * @param  [type] $operation Arithmetic operator (multiple, addition).
+		 * @param  [type] $func      Function name (floor, ceil, round, abs).
 		 * @param  double $percent Perrcent value of size.
 		 * @return double            Size.
 		 */
@@ -709,7 +709,7 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  string|int $value CSS-proterty value.
-		 * @param  string     $rule  CSS-proterty name.
+		 * @param  [type]     $rule  CSS-proterty name.
 		 * @return string            CSS-rule.
 		 */
 		public function empty_value( $value, $rule ) {
@@ -731,9 +731,9 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 * Set element emphasis.
 		 *
 		 * @since 1.0.0
-		 * @param string $parent   Parent selector.
-		 * @param string $color    Color.
-		 * @param string $property To define.
+		 * @param [type] $parent   Parent selector.
+		 * @param [type] $color    Color.
+		 * @param [type] $property To define.
 		 */
 		public function element_emphasis( $parent, $color, $property ) {
 			$result  = $parent . ' {' . $property . ':' . $color . ';}';

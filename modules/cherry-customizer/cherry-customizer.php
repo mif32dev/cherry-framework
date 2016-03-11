@@ -517,7 +517,7 @@ class Cherry_Customizer {
 	 * Retrieve a default option value.
 	 *
 	 * @since  1.0.0
-	 * @param  string $id get default option by id.
+	 * @param  [type] $id get default option by id.
 	 * @return mixed
 	 */
 	public function get_default( $id ) {
@@ -528,7 +528,7 @@ class Cherry_Customizer {
 	 * Whitelist for setting type.
 	 *
 	 * @since  1.0.0
-	 * @param  string $type type of settings.
+	 * @param  [type] $type type of settings.
 	 * @return bool
 	 */
 	public function sanitize_type( $type ) {
@@ -551,7 +551,7 @@ class Cherry_Customizer {
 	 * @author Cherry Team <cherryframework@gmail.com>
 	 * @see    wp_filter_post_kses() https://developer.wordpress.org/reference/functions/wp_filter_post_kses/
 	 * @since  1.0.0
-	 * @param  string $html HTML to sanitize.
+	 * @param  [type] $html HTML to sanitize.
 	 * @return string       Sanitized HTML.
 	 */
 	public function sanitize_text( $html ) {
@@ -572,7 +572,7 @@ class Cherry_Customizer {
 	 * @see    sanitize_email() https://developer.wordpress.org/reference/functions/sanitize_key/
 	 * @link   sanitize_email() https://codex.wordpress.org/Function_Reference/sanitize_email
 	 * @since  1.0.0
-	 * @param  string               $email   Email address to sanitize.
+	 * @param  [type]               $email   Email address to sanitize.
 	 * @param  WP_Customize_Setting $setting Setting instance.
 	 * @return string                        The sanitized email if not null; otherwise, the setting default.
 	 */
@@ -588,7 +588,7 @@ class Cherry_Customizer {
 	 * Textarea sanitization callback.
 	 *
 	 * @since  1.0.0
-	 * @param  string $html HTML to sanitize.
+	 * @param  [type] $html HTML to sanitize.
 	 * @return string       Sanitized HTML.
 	 */
 	public function sanitize_textarea( $html ) {
@@ -609,7 +609,7 @@ class Cherry_Customizer {
 	 * @see    sanitize_key()               https://developer.wordpress.org/reference/functions/sanitize_key/
 	 * @see    $wp_customize->get_control() https://developer.wordpress.org/reference/classes/wp_customize_manager/get_control/
 	 * @since  1.0.0
-	 * @param  string               $input   Slug to sanitize.
+	 * @param  [type]               $input   Slug to sanitize.
 	 * @param  WP_Customize_Setting $setting Setting instance.
 	 * @return string                        Sanitized slug if it is a valid choice; otherwise, the setting default.
 	 */
@@ -638,7 +638,7 @@ class Cherry_Customizer {
 	 * @see    sanitize_key()               https://developer.wordpress.org/reference/functions/sanitize_key/
 	 * @see    $wp_customize->get_control() https://developer.wordpress.org/reference/classes/wp_customize_manager/get_control/
 	 * @since  1.0.0
-	 * @param  string               $input   Slug to sanitize.
+	 * @param  [type]               $input   Slug to sanitize.
 	 * @param  WP_Customize_Setting $setting Setting instance.
 	 * @return string                        Sanitized slug if it is a valid choice; otherwise, the setting default.
 	 */
@@ -676,7 +676,7 @@ class Cherry_Customizer {
 	 * @see    sanitize_hex_color() https://developer.wordpress.org/reference/functions/sanitize_hex_color/
 	 * @link   sanitize_hex_color_no_hash() https://developer.wordpress.org/reference/functions/sanitize_hex_color_no_hash/
 	 * @since  1.0.0
-	 * @param  string               $hex_color HEX color to sanitize.
+	 * @param  [type]               $hex_color HEX color to sanitize.
 	 * @param  WP_Customize_Setting $setting   Setting instance.
 	 * @return string                          The sanitized hex color if not null; otherwise, the setting default.
 	 */
@@ -701,7 +701,7 @@ class Cherry_Customizer {
 	 * @author Cherry Team <cherryframework@gmail.com>
 	 * @see    wp_check_filetype() https://developer.wordpress.org/reference/functions/wp_check_filetype/
 	 * @since  1.0.0
-	 * @param  string               $image   Image filename.
+	 * @param  [type]               $image   Image filename.
 	 * @param  WP_Customize_Setting $setting Setting instance.
 	 * @return string                        The image filename if the extension is allowed; otherwise, the setting default.
 	 */
@@ -736,7 +736,7 @@ class Cherry_Customizer {
 	 * @author Cherry Team <cherryframework@gmail.com>
 	 * @see    esc_url_raw() https://developer.wordpress.org/reference/functions/esc_url_raw/
 	 * @since  1.0.0
-	 * @param  string $url URL to sanitize.
+	 * @param  [type] $url URL to sanitize.
 	 * @return string Sanitized URL.
 	 */
 	public function sanitize_url( $url ) {
@@ -747,7 +747,7 @@ class Cherry_Customizer {
 	 * File URL sanitization callback.
 	 *
 	 * @since  1.0.0
-	 * @param  string $url File URL to sanitize.
+	 * @param  [type] $url File URL to sanitize.
 	 * @return string      Sanitized URL.
 	 */
 	public function sanitize_file( $url ) {
@@ -904,7 +904,7 @@ class Cherry_Customizer {
 	 * Retrieve array with font-family (for select element).
 	 *
 	 * @since  1.0.0
-	 * @param  string $type Font type.
+	 * @param  [type] $type Font type.
 	 * @return array
 	 */
 	public function get_fonts( $type = '' ) {
@@ -927,7 +927,7 @@ class Cherry_Customizer {
 	 *
 	 * @since  1.0.0
 	 * @global object $wp_filesystem
-	 * @param  string $file          File path.
+	 * @param  [type] $file          File path.
 	 * @return array        Fonts data.
 	 */
 	public function read_font_file( $file ) {
@@ -1062,7 +1062,7 @@ class Cherry_Customizer {
 	 * Handler for custom `active_callback` feature.
 	 *
 	 * @since  1.0.0
-	 * @param  string $callback Callback-function.
+	 * @param  [type] $callback Callback-function.
 	 * @return mixed
 	 */
 	public function active_callback( $callback ) {
