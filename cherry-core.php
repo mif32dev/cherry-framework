@@ -113,13 +113,13 @@ if ( ! class_exists( 'Cherry_Core' ) ) {
 		/**
 		 * Init sinle module
 		 *
-		 * @param  string $module module slug.
-		 * @param  array  $args   Module arguments array.
+		 * @param  [type] $module module slug.
+		 * @param  [type]  $args   Module arguments array.
 		 *
 		 * @since  1.0.0
 		 * @return mixed
 		 */
-		public function init_module( string $module , $args = array() ) {
+		public function init_module( $module, $args = array() ) {
 			$hook = $module . '-module';
 			return apply_filters( $hook, false, $args, $this );
 
