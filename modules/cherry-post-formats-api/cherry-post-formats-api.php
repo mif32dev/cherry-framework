@@ -1028,7 +1028,7 @@ if ( ! class_exists( 'Cherry_Post_Formats_Api' ) ) {
 		 * @author Justin Tadlock <justin@justintadlock.com>
 		 * @author Cherry Team <support@cherryframework.com>
 		 * @since  1.0.0
-		 * @param  string $content Post content.
+		 * @param  [type] $content Post content.
 		 * @return string          URL.
 		 */
 		public function get_content_url( $content ) {
@@ -1044,7 +1044,7 @@ if ( ! class_exists( 'Cherry_Post_Formats_Api' ) ) {
 		 *
 		 * @author Cherry Team <support@cherryframework.com>
 		 * @since  1.0.0
-		 * @param  string $content Post content.
+		 * @param  [type] $content Post content.
 		 * @return string          Quote.
 		 */
 		public function get_content_quote( $content ) {

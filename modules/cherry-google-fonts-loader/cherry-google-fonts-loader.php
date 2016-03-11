@@ -215,7 +215,7 @@ if ( ! class_exists( 'Cherry_Google_Fonts_Loader' ) ) {
 		 * Get single typography option value from database and store it in object property
 		 *
 		 * @since  1.0.0
-		 * @param  string $font option name to get from database.
+		 * @param  [type] $font option name to get from database.
 		 */
 		public function add_font( $font ) {
 
@@ -276,7 +276,7 @@ if ( ! class_exists( 'Cherry_Google_Fonts_Loader' ) ) {
 		 * Add new font property to existaing properties array
 		 *
 		 * @since 1.0.0
-		 * @param string $new      property to add.
+		 * @param [type] $new      property to add.
 		 * @param array  $existing existing properties.
 		 */
 		public function add_font_prop( $new, $existing ) {

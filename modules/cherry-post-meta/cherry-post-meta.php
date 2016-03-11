@@ -174,7 +174,7 @@ if ( ! class_exists( 'Cherry_Post_Meta' ) ) {
 		 * Add meta box handler
 		 *
 		 * @since  1.0.0
-		 * @param  string $post_type The post type of the current post being edited.
+		 * @param  [type] $post_type The post type of the current post being edited.
 		 * @param  object $post      The current post object.
 		 * @return void
 		 */
@@ -215,7 +215,7 @@ if ( ! class_exists( 'Cherry_Post_Meta' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  mixed  $post     current post object.
-		 * @param  string $format current format name.
+		 * @param  [type] $format current format name.
 		 * @return string
 		 */
 		public function get_fields( $post, $format = '%s' ) {
@@ -288,7 +288,7 @@ if ( ! class_exists( 'Cherry_Post_Meta' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  array  $field   arguments array.
-		 * @param  string $arg     argument key.
+		 * @param  [type] $arg     argument key.
 		 * @param  mixed  $default default argument value.
 		 * @return mixed
 		 */
@@ -307,7 +307,7 @@ if ( ! class_exists( 'Cherry_Post_Meta' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  array  $field field data.
-		 * @param  string $id    field key.
+		 * @param  [type] $id    field key.
 		 * @return bool
 		 */
 		public function set_field_types( $field, $id ) {

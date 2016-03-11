@@ -121,8 +121,8 @@ if ( ! class_exists( 'Cherry_Base_Updater' ) ) {
 		 * Rename github folder on update.
 		 *
 		 * @since  4.0.0
-		 * @param  string $upgrate_dir   Theme folder name.
-		 * @param  string $remote_dir    Remote folder name.
+		 * @param  [type] $upgrate_dir   Theme folder name.
+		 * @param  [type] $remote_dir    Remote folder name.
 		 * @param  object $skin_upgrader Upgrader object instance.
 		 * @return string
 		 */

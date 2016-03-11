@@ -185,7 +185,7 @@ if ( ! class_exists( 'Cherry_Dynamic_Css_Utilities' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  [type] $color   HEX or RGB(A) color value.
-		 * @param  [type]  $percent Modify percent (0-100).
+		 * @param  [type] $percent Modify percent (0-100).
 		 * @return array           Prepared color and modify percent.
 		 */
 		public function prepare_color_mod( $color, $percent = 0 ) {

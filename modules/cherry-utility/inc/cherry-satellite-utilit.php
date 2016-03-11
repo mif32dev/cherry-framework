@@ -87,8 +87,8 @@ if ( ! class_exists( 'Cherry_Satellite_Utilit' ) ) {
 		 * Return post terms.
 		 *
 		 * @since  1.0.0
-		 * @param string $tax - category, post_tag, post_format.
-		 * @param string $key - slug, term_id.
+		 * @param [type] $tax - category, post_tag, post_format.
+		 * @param [type] $key - slug, term_id.
 		 * @return array
 		 */
 		public function get_terms_array( $tax = 'category', $key = 'slug' ) {

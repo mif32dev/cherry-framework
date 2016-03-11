@@ -26,7 +26,7 @@ if ( ! class_exists( 'Cherry_Attributes_Utilit' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param array  $args array of arguments.
-		 * @param string $type - post, term.
+		 * @param [type] $type - post, term.
 		 * @param int    $id ID of post.
 		 * @return string
 		 */
@@ -66,7 +66,7 @@ if ( ! class_exists( 'Cherry_Attributes_Utilit' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param array  $args array of arguments.
-		 * @param string $type - post, term.
+		 * @param [type] $type - post, term.
 		 * @param int    $id ID of post.
 		 * @return string
 		 */
@@ -109,7 +109,7 @@ if ( ! class_exists( 'Cherry_Attributes_Utilit' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param array  $args array of arguments.
-		 * @param string $type - post, term.
+		 * @param [type] $type - post, term.
 		 * @param int    $id ID of post.
 		 * @return string
 		 */
