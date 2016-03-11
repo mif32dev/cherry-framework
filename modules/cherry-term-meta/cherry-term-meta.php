@@ -136,7 +136,7 @@ if ( ! class_exists( 'Cherry_Term_Meta' ) ) {
 		 * Render add term form fields
 		 *
 		 * @since  1.0.0
-		 * @param  string $taxonomy taxonomy name.
+		 * @param  [type] $taxonomy taxonomy name.
 		 * @return void
 		 */
 		public function render_add_fields( $taxonomy ) {
@@ -150,7 +150,7 @@ if ( ! class_exists( 'Cherry_Term_Meta' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  object $term     current term object.
-		 * @param  string $taxonomy taxonomy name.
+		 * @param  [type] $taxonomy taxonomy name.
 		 * @return void
 		 */
 		public function render_edit_fields( $term, $taxonomy ) {
@@ -164,7 +164,7 @@ if ( ! class_exists( 'Cherry_Term_Meta' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  mixed  $term     current term object.
-		 * @param  string $taxonomy current taxonomy name.
+		 * @param  [type] $taxonomy current taxonomy name.
 		 * @return string
 		 */
 		public function get_fields( $term, $taxonomy, $format = '%s' ) {
@@ -228,7 +228,7 @@ if ( ! class_exists( 'Cherry_Term_Meta' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  array  $field   arguments array.
-		 * @param  string $arg     argument key.
+		 * @param  [type] $arg     argument key.
 		 * @param  mixed  $default default argument value.
 		 * @return mixed
 		 */
@@ -247,7 +247,7 @@ if ( ! class_exists( 'Cherry_Term_Meta' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  array  $field field data.
-		 * @param  string $id    field key.
+		 * @param  [type] $id    field key.
 		 * @return bool
 		 */
 		public function set_field_types( $field, $id ) {
